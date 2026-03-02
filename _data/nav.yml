@@ -1,0 +1,10 @@
+- name: Home
+  url: /
+- name: Essays
+  url: /essays/
+- name: Book Reviews
+  url: /book-reviews/
+- name: Projects
+  url: /projects/
+- name: About
+  url: /about/

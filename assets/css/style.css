@@ -1,0 +1,300 @@
+/* ===== Theme Variables ===== */
+:root,
+[data-theme="light"] {
+  --bg: #ffffff;
+  --bg-secondary: #f6f8fa;
+  --text: #1f2328;
+  --text-secondary: #656d76;
+  --border: #d0d7de;
+  --link: #0D4723;
+  --link-hover: #093618;
+  --pill-bg: #f6f8fa;
+  --pill-bg-active: #0D4723;
+  --pill-text: #1f2328;
+  --pill-text-active: #ffffff;
+  --code-bg: #f6f8fa;
+  --blockquote-border: #d0d7de;
+  --blockquote-text: #656d76;
+  --table-border: #d0d7de;
+  --table-row-alt: #f6f8fa;
+  --toggle-bg: #e8e8e8;
+}
+
+[data-theme="dark"] {
+  --bg: #000000;
+  --bg-secondary: #0d1117;
+  --text: #b8c0cc;
+  --text-secondary: #6e7681;
+  --border: #30363d;
+  --link: #2d9a50;
+  --link-hover: #37b55f;
+  --pill-bg: #0d1117;
+  --pill-bg-active: #2d9a50;
+  --pill-text: #b8c0cc;
+  --pill-text-active: #000000;
+  --code-bg: #0d1117;
+  --blockquote-border: #30363d;
+  --blockquote-text: #6e7681;
+  --table-border: #30363d;
+  --table-row-alt: #0d1117;
+  --toggle-bg: #21262d;
+}
+
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+  background-color: var(--bg);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* ===== Header & Navigation ===== */
+.site-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.5rem 2rem 1rem;
+  max-width: 860px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.nav-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  border-radius: 9999px;
+  background: var(--pill-bg);
+  color: var(--pill-text);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.pill:hover {
+  background: var(--pill-bg-active);
+  color: var(--pill-text-active);
+  border-color: var(--pill-bg-active);
+}
+
+.pill.active {
+  background: var(--pill-bg-active);
+  color: var(--pill-text-active);
+  border-color: var(--pill-bg-active);
+}
+
+.theme-toggle {
+  background: var(--toggle-bg);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  cursor: pointer;
+  padding: 0.45rem 0.65rem;
+  font-size: 0.875rem;
+  line-height: 1;
+  flex-shrink: 0;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--text-secondary);
+}
+
+[data-theme="light"] .icon-moon { display: none; }
+[data-theme="dark"] .icon-sun { display: none; }
+
+/* ===== Content ===== */
+.content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1rem 2rem 4rem;
+}
+
+/* ===== GitHub-style Markdown Body ===== */
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h1 { font-size: 2em; padding-bottom: 0.3em; border-bottom: 1px solid var(--border); }
+.markdown-body h2 { font-size: 1.5em; padding-bottom: 0.3em; border-bottom: 1px solid var(--border); }
+.markdown-body h3 { font-size: 1.25em; }
+.markdown-body h4 { font-size: 1em; }
+.markdown-body h5 { font-size: 0.875em; }
+.markdown-body h6 { font-size: 0.85em; color: var(--text-secondary); }
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.markdown-body a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+  color: var(--link-hover);
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Lists */
+.markdown-body ul,
+.markdown-body ol {
+  margin-bottom: 1em;
+  padding-left: 2em;
+}
+
+.markdown-body li {
+  margin-bottom: 0.25em;
+}
+
+.markdown-body li + li {
+  margin-top: 0.25em;
+}
+
+/* Code */
+.markdown-body code {
+  background: var(--code-bg);
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
+  font-size: 85%;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+.markdown-body pre {
+  background: var(--code-bg);
+  border-radius: 6px;
+  padding: 1em;
+  overflow-x: auto;
+  margin-bottom: 1em;
+  border: 1px solid var(--border);
+}
+
+.markdown-body pre code {
+  background: transparent;
+  padding: 0;
+  font-size: 85%;
+  line-height: 1.45;
+}
+
+/* Blockquotes */
+.markdown-body blockquote {
+  border-left: 0.25em solid var(--blockquote-border);
+  color: var(--blockquote-text);
+  padding: 0 1em;
+  margin: 0 0 1em 0;
+}
+
+/* Tables */
+.markdown-body table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  border: 1px solid var(--table-border);
+  padding: 0.5em 0.75em;
+  text-align: left;
+}
+
+.markdown-body table tr:nth-child(even) {
+  background: var(--table-row-alt);
+}
+
+.markdown-body table th {
+  font-weight: 600;
+  background: var(--bg-secondary);
+}
+
+/* Horizontal Rule */
+.markdown-body hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 1.5em 0;
+  background-color: var(--border);
+  border: 0;
+  border-radius: 2px;
+}
+
+/* ===== File List (folder pages) ===== */
+.file-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1em;
+}
+
+.file-list li {
+  padding: 0.5em 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.file-list li:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.file-list li a {
+  color: var(--link);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.file-list li a:hover {
+  text-decoration: underline;
+  color: var(--link-hover);
+}
+
+/* ===== Page date ===== */
+.page-date {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 1.5em;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .site-header {
+    padding: 1rem 1rem 0.75rem;
+  }
+  .content {
+    padding: 1rem 1rem 3rem;
+  }
+}

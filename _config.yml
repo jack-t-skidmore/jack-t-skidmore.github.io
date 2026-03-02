@@ -1,0 +1,11 @@
+title: Jack Skidmore
+description: Personal site
+baseurl: ""
+url: "https://jack-t-skidmore.github.io"
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+permalink: pretty
+exclude:
+  - README.md

@@ -1,0 +1,4 @@
+---
+layout: folder
+title: Projects
+---
