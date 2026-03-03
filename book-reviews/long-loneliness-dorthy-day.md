@@ -27,11 +27,11 @@ Dorothy does not provide a systematic breakdown of how Ludlow arrives at the con
 
 As I shared earlier, my default working anthropology skews low; I tend to be skeptical that people will be able to promote the good. For example, this meme was something I strongly resonated with in high school, and if I am honest, it still resonates to some degree.
 
-[people-are-stupid](/assets/images/people-are-stupid.png)
+![people-are-stupid](/assets/images/people-are-stupid.png)
 
 An anarchic society could work if all people strove to live out their calling as the image of God and worked for the common good. A failure to answer that calling, either from stupidity, apathy or malevolence, would disrupt the system, and in my opinion would render anarchy “as impractical as cavalry.” If the goal is to love our neighbors, I am not convinced that this is the most loving or wise way to govern given the corrupt state of our world. However, I think it is a question worth wrestling through, especially if we give weight to our status as God’s image in our working anthropology. How do we govern and promote the common good if we:
 
-[people-are-dignified](/assets/images/people-are-dignified.png)
+![people-are-dignified](/assets/images/people-are-dignified.png)
 
 # Do great lights blind people? (265)
 Dorothy shares a memory of Ammon Hennacy, a writer for the Catholic Worker. Ammon who, stuck in solitary confinement during World War 1, read the Bible, Tolstoy and Gandhi. These influences lead him to advocate for a form of Christian anarchy. Upon reading one of Ammon’s articles, the rector of a seminary remarked that Ammon, “has seen so great a light it has blinded him.”
