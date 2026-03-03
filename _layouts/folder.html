@@ -7,7 +7,7 @@ layout: default
 
 <ul class="file-list">
   {% assign folder = page.dir %}
-  {% assign pages_in_folder = site.pages | where_exp: "p", "p.dir == folder" | sort: "date" | reverse %}
+  {% assign pages_in_folder = site.pages | where_exp: "p", "p.url contains folder" | sort: "date" | reverse %}
   {% for p in pages_in_folder %}
     {% unless p.url == page.url %}
       {% unless p.exclude %}
