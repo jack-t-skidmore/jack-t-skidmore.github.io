@@ -1,0 +1,7 @@
+---
+layout: page
+title: Crossroads Youth
+date: 2024-09-01
+---
+
+I help lead the youth program at a small church in Lansing called Crossroads. We've been creative with the format since it is a smaller church. Check it out [here](https://docs.google.com/presentation/d/1Wi5cRcrCljBoRGlYNtggHChcPo0ADbCK7YNvKQjy6EA/edit?slide=id.p#slide=id.p).
