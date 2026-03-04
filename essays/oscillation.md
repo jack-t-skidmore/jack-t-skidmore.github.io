@@ -18,7 +18,7 @@ And he continually fights for relationship. He wrestles with Jacob, a cheat. He 
 
 And we see Israel fail over and over. They optimize for power, at the expense of relationship. And this is clearly the human instinct writ large. Why is optimization toward a single variable so alluring? Fear. To be in relationship means you are dependent on another. Relationships are inherently vulnerable and require trust. And people are not always trustworthy.
 
-This was the original temptation. 
+This is the original temptation. 
 
 "'You will not certainly die,' the serpent said to the woman. 'For God knows that when you eat from it your eyes will be opened, and you will be like God, knowing good and evil.'"
 
