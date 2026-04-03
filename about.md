@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is a place where I think out loud. I am deeply curious about people, and how we interact with each other. People are creative and remarkably flexible. People are stubborn and close minded. People work together to and accomplish both wonderful and horrible things. People make life worth living.
+This is a place to think out loud. Having a forum to share my thoughts forces me to complete them. I am curious about people and how we interact with each other and the world. That is usually what I think and write about.
 
 You're welcome to email me: jtskid10@gmail.com
