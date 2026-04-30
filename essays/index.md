@@ -1,5 +1,5 @@
 ---
 layout: folder
 title: Essays
-description: "Essays by Jack Skidmore on faith, work, and how people coordinate."
+description: "Jack's essays on how people coordinate to accomplish goals."
 ---
