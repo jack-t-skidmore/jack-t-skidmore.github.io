@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is a place to think out loud. Having a forum to share my thoughts forces me to complete them. I am curious about people and how we interact with each other and the world. That is usually what I think and write about.
+This is a place to think out loud. Having a place to share my thoughts helps me complete them.
 
-You're welcome to email me: jtskid10@gmail.com
+I am curious about how people coordinate to accomplish goals. This is what I work on and write about.
+
+You're welcome to email me: jack@eudo.co

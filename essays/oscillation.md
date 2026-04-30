@@ -14,12 +14,12 @@ Life oscillates. A heart beating. Day and night. Spring and fall. Population dyn
 
 That is a controversial statement. Christian thought is littered with Hellenistic praise for the static. God is supposed to be the unmoved mover. Impassible, immutable. The Bible describes Him as above and before all. The Bible also contains stories where he does not act impassibly. He embeds himself deeply with a people. He compromises with them, commanding “You shall not murder,” and then accompanying them as they battle and kill people in Canaan. He is relational, even when it is messy.
 
-And he continually fights for relationship. He wrestles with Jacob, a cheat. He walks with Moses, a murderer. He calls David, also a murderer, a friend. He works with the people around him to create a system that oscillates. One that outright objects to optimizing for military strength, or money, or political power. One that sets creative mechanisms to redistribute wealth among his people. One that welcomes the alien, because Israel was an alien in Egypt.
+And he continually fights for relationship. He wrestles with Jacob, a cheat. He walks with Moses, a murderer. He calls David, also a murderer, a friend. He works with the people around him to create systems that oscillate. Ones that outright object to optimizing for military strength, or money, or political power. Ones that set creative mechanisms to redistribute wealth. Ones that welcome the alien, because Israel was an alien in Egypt.
 
-And we see Israel fail over and over. They optimize for power, at the expense of relationship. And this is clearly the human instinct writ large. Why is optimization toward a single variable so alluring? Fear. To be in relationship means you are dependent on another. Relationships are inherently vulnerable and require trust. And people are not always trustworthy.
+And we see Israel fail over and over. They optimize for power at the expense of relationship. And this is clearly the human instinct writ large. Why is optimization toward a single variable so alluring? Fear. To be in relationship means you are dependent on another. Relationships are inherently vulnerable and require trust. But what if the other cannot be trusted?
 
 This is the original temptation. 
 
 "'You will not certainly die,' the serpent said to the woman. 'For God knows that when you eat from it your eyes will be opened, and you will be like God, knowing good and evil.'"
 
-We are all forced to chose: love and trust others, or optimize for control. And here's the catch — it is actually rational to optimize for control. Many people do. And that is why the ultimate, love, is fundamental. Every act of love is an invitation to dance.
+The serpent won by getting Adam and Eve to doubt God's trustworthiness. And now we live in world where people are actually not trustworthy, and therefore it is actually rational to optimize for control. And that is why love is so powerful. The lover, by becoming vulnerable, breaks cycle of optimization, and creates the possibility for oscillation; every act of love is an invitation to dance.
