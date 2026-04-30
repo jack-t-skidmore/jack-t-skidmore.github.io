@@ -1,7 +1,7 @@
 title: Jack Skidmore
-description: Personal site
+description: Essays, prayers, and projects from Jack Skidmore.
 baseurl: ""
-url: "https://jack-t-skidmore.github.io"
+url: "https://jackskidmore.co"
 markdown: kramdown
 kramdown:
   input: GFM

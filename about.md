@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+description: "A place to think out loud — Jack writes about how people coordinate to accomplish goals."
 ---
 
 This is a place to think out loud. Having a place to share my thoughts helps me complete them.

@@ -2,6 +2,7 @@
 layout: page
 title: Jesus Prayer Call and Response
 date: 2024-06-10
+description: "A call-and-response framing of the Jesus Prayer for confession, assurance, and thanksgiving."
 ---
 
 For the prayer of confession, assurance, and thanksgiving, I would like to borrow from the broader Christian family, and have us pray together, the Jesus Prayer.

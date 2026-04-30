@@ -2,6 +2,7 @@
 layout: page
 title: Who is the Greatest?
 date: 2025-11-23
+description: "A walk through Matthew 17–20 on Jesus' upside-down kingdom, ending in a prayer for sight."
 ---
 
 ### Matthew 17

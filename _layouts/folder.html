@@ -11,7 +11,7 @@ layout: default
   {% for p in pages_in_folder %}
     {% unless p.url == page.url %}
       {% unless p.exclude %}
-        <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+        <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% if p.date %} <span class="file-date">({{ p.date | date: "%B, %Y" }})</span>{% endif %}</li>
       {% endunless %}
     {% endunless %}
   {% endfor %}

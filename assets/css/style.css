@@ -257,18 +257,12 @@ body {
 
 /* ===== File List (folder pages) ===== */
 .file-list {
-  list-style: none;
-  padding-left: 0;
   margin-top: 1em;
+  padding-left: 1.5em;
 }
 
 .file-list li {
-  padding: 0.5em 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.file-list li:first-child {
-  border-top: 1px solid var(--border);
+  margin-bottom: 0.25em;
 }
 
 .file-list li a {
@@ -280,6 +274,11 @@ body {
 .file-list li a:hover {
   text-decoration: underline;
   color: var(--link-hover);
+}
+
+.file-date {
+  color: var(--text-secondary);
+  font-size: 0.9em;
 }
 
 /* ===== Page date ===== */

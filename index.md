@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+description: "Essays, prayers, and projects from Jack Skidmore."
 ---
 
 **Start here:**

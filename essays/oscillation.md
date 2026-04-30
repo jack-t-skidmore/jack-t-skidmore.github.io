@@ -2,6 +2,7 @@
 layout: page
 title: Oscillation
 date: 2026-03-04
+description: "On the relationship between ultimate and penultimate things, and why optimization stops the dance."
 ---
 
 There are ultimate things, and penultimate things. Loving God and the people in your life is ultimate. Not loving humanity, but actually loving the people you know, that is most important, and everything else must be put in that context. This does not feel natural. It feels natural, at least in my context, to put self-actualization first. Work, therapy, exercise, or other hobbies that embed themselves as a core part of your identity. It is normal to follow work, and to let the relationships in your life be dictated by that context. It is not normal to pick your relationships and to limit work to their context.

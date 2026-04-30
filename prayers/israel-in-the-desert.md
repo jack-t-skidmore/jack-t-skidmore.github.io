@@ -2,6 +2,7 @@
 layout: page
 title: Israel in the Desert
 date: 2025-04-12
+description: "A prayer of confession and good news, framed by Israel's failure and Jesus' faithfulness in the desert."
 ---
 
 Our Father in heaven 
