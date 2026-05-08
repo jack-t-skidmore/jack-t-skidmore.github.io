@@ -23,4 +23,4 @@ This is the original temptation.
 
 "'You will not certainly die,' the serpent said to the woman. 'For God knows that when you eat from it your eyes will be opened, and you will be like God, knowing good and evil.'"
 
-The serpent won by getting Adam and Eve to doubt God's trustworthiness. And now we live in world where people are actually not trustworthy, and therefore it is actually rational to optimize for control. And that is why love is so powerful. The lover, by becoming vulnerable, breaks cycle of optimization, and creates the possibility for oscillation; every act of love is an invitation to dance.
+The serpent won by getting Adam and Eve to doubt God's trustworthiness. And now we live in world where people are actually not trustworthy, and therefore it is rational to optimize for control. And that is why love is so powerful. The lover, by becoming vulnerable, breaks cycle of optimization, and creates the possibility for oscillation; every act of love is an invitation to dance.
