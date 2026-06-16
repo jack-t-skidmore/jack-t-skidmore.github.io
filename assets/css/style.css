@@ -122,6 +122,83 @@ body {
 [data-theme="light"] .icon-moon { display: none; }
 [data-theme="dark"] .icon-sun { display: none; }
 
+/* ===== Email subscribe pill ===== */
+.header-actions {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+/* pill-shaped container that holds the input + send bubble */
+.subscribe {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: var(--pill-bg);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  padding: 0.1rem 0.35rem 0.1rem 0.75rem;
+  transition: border-color 0.15s ease;
+}
+
+.subscribe:focus-within {
+  border-color: var(--text-secondary);
+}
+
+.subscribe-input {
+  border: 0;
+  background: transparent;
+  outline: none;
+  font: inherit;
+  font-size: 0.875rem;
+  color: var(--text);
+  padding: 0.25rem 0;
+  width: 8.5rem;
+}
+
+.subscribe-input::placeholder {
+  color: var(--text-secondary);
+}
+
+/* round arrow "send" bubble, in the site accent green */
+.subscribe-send {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 9999px;
+  cursor: pointer;
+  background: var(--pill-bg-active);
+  color: var(--pill-text-active);
+}
+
+.subscribe-send:hover {
+  background: var(--link-hover);
+}
+
+/* the [hidden] attr must win over the display rule above */
+.subscribe-send[hidden] {
+  display: none;
+}
+
+/* confirmation state */
+.subscribe-done {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  padding: 0.25rem 0;
+  line-height: 1.35;
+  word-break: break-word;   /* long addresses wrap instead of overflowing */
+}
+
+.subscribe.is-done {
+  padding: 0.35rem 0.85rem;
+  max-width: 18rem;          /* keep the morphed pill from blowing out the header */
+}
+
 /* ===== Content ===== */
 .content {
   max-width: 860px;
@@ -295,5 +372,8 @@ body {
   }
   .content {
     padding: 1rem 1rem 3rem;
+  }
+  .subscribe-input {
+    width: 6.5rem;
   }
 }
