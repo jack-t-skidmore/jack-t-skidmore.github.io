@@ -45,7 +45,7 @@
     <nav class="nav-pills">
       {% for item in site.data.nav %}
         <a href="{{ item.url | relative_url }}"
-           class="pill {% if page.url == item.url %}active{% elsif item.url != '/' and page.url contains item.url %}active{% endif %}">
+           class="pill {% if page.nav_active == item.url %}active{% elsif page.url == item.url %}active{% elsif item.url != '/' and page.url contains item.url %}active{% endif %}">
           {{ item.name }}
         </a>
       {% endfor %}
