@@ -387,13 +387,13 @@ body {
   white-space: nowrap;
 }
 .copy-email::after {
-  content: "Copied!";
+  content: "Copied";
   position: absolute;
   bottom: 135%;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--text);
-  color: var(--bg);
+  background: var(--link);
+  color: #ffffff;
   padding: 0.15em 0.5em;
   border-radius: 4px;
   font-size: 0.75em;
