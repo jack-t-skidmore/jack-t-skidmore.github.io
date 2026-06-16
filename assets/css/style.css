@@ -377,3 +377,29 @@ body {
     width: 6.5rem;
   }
 }
+
+/* ===== Click-to-copy email ===== */
+.copy-email {
+  position: relative;
+  cursor: pointer;
+  color: var(--link);
+  border-bottom: 1px dotted currentColor;
+  white-space: nowrap;
+}
+.copy-email::after {
+  content: "Copied!";
+  position: absolute;
+  bottom: 135%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text);
+  color: var(--bg);
+  padding: 0.15em 0.5em;
+  border-radius: 4px;
+  font-size: 0.75em;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+.copy-email.copied::after { opacity: 1; }

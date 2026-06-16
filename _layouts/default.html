@@ -121,5 +121,23 @@
       });
     })();
   </script>
+
+  <script>
+    (function () {
+      document.querySelectorAll('.copy-email').forEach(function (el) {
+        function copy() {
+          var text = el.getAttribute('data-email') || el.textContent.trim();
+          navigator.clipboard.writeText(text).then(function () {
+            el.classList.add('copied');
+            setTimeout(function () { el.classList.remove('copied'); }, 1200);
+          });
+        }
+        el.addEventListener('click', copy);
+        el.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); copy(); }
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
