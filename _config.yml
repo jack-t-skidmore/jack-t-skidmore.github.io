@@ -9,3 +9,11 @@ kramdown:
 permalink: pretty
 exclude:
   - README.md
+
+# Highlight the About nav pill on project pages (and any page can override
+# its active pill with `nav_active:` in front matter).
+defaults:
+  - scope:
+      path: "projects"
+    values:
+      nav_active: /about/
