@@ -7,7 +7,7 @@ description: "Jack works on and writes about how people coordinate to accomplish
 
 This is a place to think out loud. Having a place to share my thoughts helps me complete them. I am curious about how people coordinate to accomplish goals. This is what I work on and write about.
 
-You're welcome to email me: <span class="copy-email" data-email="jtskid10@gmail.com" role="button" tabindex="0" title="Click to copy">jtskid10@gmail.com</span>
+You're welcome to email me: <span class="copy-email" data-email="jtskid10@gmail.com" role="button" tabindex="0" title="Click to copy"><!--email_off-->jtskid10@gmail.com<!--/email_off--></span>
 
 There are a few other ways to **[support my work](/support/)**.
 
