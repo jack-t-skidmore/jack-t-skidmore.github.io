@@ -17,7 +17,7 @@
   --blockquote-text: #656d76;
   --table-border: #d0d7de;
   --table-row-alt: #f6f8fa;
-  --toggle-bg: #e8e8e8;
+  --toggle-bg: #f6f8fa;
 }
 
 [data-theme="dark"] {
@@ -37,7 +37,7 @@
   --blockquote-text: #6e7681;
   --table-border: #30363d;
   --table-row-alt: #0d1117;
-  --toggle-bg: #21262d;
+  --toggle-bg: #0d1117;
 }
 
 /* ===== Reset & Base ===== */
