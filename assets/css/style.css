@@ -187,15 +187,15 @@ body {
 
 /* confirmation state */
 .subscribe-done {
-  font-size: 0.8rem;
+  font-size: 0.875rem;       /* match the input so the row height is identical */
   color: var(--text-secondary);
   padding: 0.25rem 0;
-  line-height: 1.35;
+  line-height: 1.5;
   word-break: break-word;   /* long addresses wrap instead of overflowing */
 }
 
 .subscribe.is-done {
-  padding: 0.35rem 0.85rem;
+  padding: 0.1rem 0.85rem;   /* same vertical padding as the input state — no taller */
   max-width: 18rem;          /* keep the morphed pill from blowing out the header */
 }
 
