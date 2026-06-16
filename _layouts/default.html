@@ -24,7 +24,7 @@
   <meta name="twitter:description" content="{{ description }}">
   <meta name="twitter:image" content="{{ og_image }}">
 
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body>
 
@@ -110,7 +110,7 @@
         // optimistic confirmation
         input.hidden = true;
         send.hidden  = true;
-        done.textContent = 'Thanks for subscribing; confirmation email sent to ' + email;
+        done.textContent = 'Thank you';
         done.hidden = false;
         form.classList.add('is-done');
       });
