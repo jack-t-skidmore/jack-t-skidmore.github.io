@@ -20,4 +20,6 @@ Things I'm working on:
 {% endfor %}
 </ul>
 
+If something here resonates, there are [a few ways to support my work](/support/).
+
 You're welcome to email me: hello@jackskidmore.com
