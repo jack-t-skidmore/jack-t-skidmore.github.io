@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-description: "Jack Skidmore works on and writes about how people coordinate to accomplish goals — essays, prayers, and projects."
+description: "Jack Skidmore works on and writes about how people coordinate to accomplish goals."
 ---
 
 **Start here:**
