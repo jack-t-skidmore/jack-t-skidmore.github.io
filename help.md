@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Help
+title: How to help
 permalink: /help/
 nav_active: /about/
 description: "A few ways to help Jack."
