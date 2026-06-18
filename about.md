@@ -9,7 +9,7 @@ This is a place to think out loud. Having a place to share my thoughts helps me 
 
 You're welcome to email me: <span class="copy-email" data-email="hello@jackskidmore.com" role="button" tabindex="0" title="Click to copy"><!--email_off-->hello@jackskidmore.com<!--/email_off--></span>
 
-There are a few other ways to **[support my work](/support/)**.
+There are a few other ways to **[help](/help/)**.
 
 
 
