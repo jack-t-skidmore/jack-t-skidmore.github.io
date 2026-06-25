@@ -2,6 +2,7 @@
 layout: page
 title: Pistinomics
 date: 2025-07-01
+order: 2
 description: "A system of psychometric variables designed to make cooperation legible."
 ---
 

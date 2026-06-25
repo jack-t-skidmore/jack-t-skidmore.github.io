@@ -9,7 +9,7 @@ This is a place to think out loud. Having a place to share my thoughts helps me 
 
 You're welcome to email me: <span class="copy-email" data-email="hello@jackskidmore.com" role="button" tabindex="0" title="Click to copy"><!--email_off-->hello@jackskidmore.com<!--/email_off--></span>
 
-There are a few ways to **[help](/help/)**.
+There are a few ways to [help](/help/).
 
 
 
@@ -17,11 +17,11 @@ There are a few ways to **[help](/help/)**.
 
 What I work on:
 
-{% assign projects = site.pages | where_exp: "p", "p.url contains '/projects/'" | sort: "date" | reverse %}
+{% assign projects = site.pages | where_exp: "p", "p.url contains '/about/' and p.order" | sort: "order" %}
 <ul class="file-list">
 {% for p in projects %}
-  {% unless p.url == '/projects/' or p.exclude %}
-  <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> — {{ p.description }}</li>
+  {% unless p.exclude %}
+  <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a>: {{ p.description | slice: 0 | upcase }}{{ p.description | slice: 1, 500 }}</li>
   {% endunless %}
 {% endfor %}
 </ul>

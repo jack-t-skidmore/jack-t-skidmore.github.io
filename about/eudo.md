@@ -2,6 +2,7 @@
 layout: page
 title: Eudo
 date: 2024-10-15
+order: 1
 description: "Eudo runs experiments inside organizations to help people flourish and institutions thrive."
 ---
 
