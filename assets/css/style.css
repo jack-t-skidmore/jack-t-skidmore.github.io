@@ -358,7 +358,6 @@ body {
 .file-list li a {
   color: var(--link);
   text-decoration: underline;
-  font-weight: 500;
 }
 
 .file-list li a:hover {
