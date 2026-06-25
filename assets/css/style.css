@@ -62,7 +62,7 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   padding: 1.5rem 2rem 1rem;
-  max-width: 860px;
+  max-width: 760px;
   margin: 0 auto;
   gap: 1rem;
 }
@@ -201,7 +201,7 @@ body {
 
 /* ===== Content ===== */
 .content {
-  max-width: 860px;
+  max-width: 760px;
   margin: 0 auto;
   padding: 1rem 2rem 4rem;
 }
@@ -233,13 +233,26 @@ body {
 
 .markdown-body a {
   color: var(--link);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .markdown-body a:hover {
-  text-decoration: underline;
   color: var(--link-hover);
 }
+
+/* Footnotes — refs underline with the rule above; swap kramdown's ↩ return glyph for a clean up-caret */
+.markdown-body a.reversefootnote {
+  font-size: 0;
+  text-decoration: none;
+  margin-left: 0.35em;
+}
+.markdown-body a.reversefootnote::after {
+  content: "↑";
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--link);
+}
+.markdown-body a.reversefootnote:hover::after { color: var(--link-hover); }
 
 .markdown-body strong {
   font-weight: 600;
