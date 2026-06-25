@@ -5,7 +5,6 @@ date: 2026-06-25
 description: "How power shapes technological and political progress."
 ---
 
-# Who are the gatekeepers?
 In *A Culture of Growth* Mokyr tells a compelling story explaining the unique cultural conditions that produced the Industrial Revolution in Europe. Let's think through the heroes and villains of his story because he made a few assumptions that didn't sit right with me.
 
 His heroes can be sorted into two categories: ideas and mechanism. First his hero-ideas. In the epilogue he highlights two ideas that helped start the Industrial Revolution leading to modernity:
