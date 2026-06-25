@@ -17,7 +17,7 @@ There are a few ways to [help](/help/).
 
 What I work on:
 
-{% assign projects = site.pages | where_exp: "p", "p.url contains '/about/' and p.order" | sort: "order" %}
+{% assign projects = site.pages | where_exp: "p", "p.url contains '/about/'" | where_exp: "p", "p.order" | sort: "order" %}
 <ul class="file-list">
 {% for p in projects %}
   {% unless p.exclude %}
