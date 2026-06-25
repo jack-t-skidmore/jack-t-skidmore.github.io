@@ -119,6 +119,7 @@ For now, progress happens when it is good for gatekeepers. Technological progres
 This takes us back to the Hebrew Bible’s claim that all people are made in the image of God. God delegates his power to rule creation. The fall shows how we abdicate our role. Instead of ruling creation, a creature rules us[^12]. We give in to the serpent’s frame, supposing God is not trustworthy. We try to become like God. We become gatekeepers managing an external contender. Genesis goes on to show how each generation makes the same mistake. The first is particularly tragic. God shows favor to Cain's brother, Abel. Cain becomes angry. God approaches Cain, with a challenge, or possibly, a word of encouragement, one we should heed.
 
 > “It desires to have you, but you must rule over it.”
+
 ## Footnotes
 [^1]: One reason Christianity became backward-looking is because it enmeshed with Aristotelian philosophy, which is backward-looking. They enmeshed because Aristotelian thought was fashionable, and aspects rhymed with Christian doctrine. Examples of this enmeshment are the emphasis on God being impassible, just like Aristotle's unmoved mover, and the body and soul distinction; these are largely foreign to the Bible, but is is native to Aristotelian metaphysics. Aristotelian thought is backward-looking in that there are existing, eternal, forms that should be contemplated, or looked-back on. This is different than the Bible's command to “subdue the earth” which expects agency.
 
