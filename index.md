@@ -5,7 +5,7 @@ description: "Jack Skidmore thinks about how people coordinate to accomplish goa
 ---
 
 **Start here:**
-- [Who are the Gatekeepers?](essays/who-are-the-gatekeepers/)
+- [Who are the Gatekeepers?](essays/gatekeepers/)
 - [Oscillation](/essays/oscillation/)
 - [Who is the Greatest?](/prayers/who-is-the-greatest/)
 - [Eudo](/about/eudo/)
