@@ -386,7 +386,7 @@ body {
      (which reveals the send arrow) never reflows the nav pills. */
   .header-actions {
     width: 100%;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
   .content {
     padding: 1rem 1rem 3rem;
