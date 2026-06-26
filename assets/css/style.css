@@ -142,9 +142,22 @@ body {
   transition: border-color 0.15s ease;
 }
 
-.subscribe:focus-within {
+.subscribe:hover {
   border-color: var(--text-secondary);
 }
+
+.subscribe:focus-within {
+  border-color: var(--link);
+}
+
+/* mail icon inside the pill */
+.subscribe-icon {
+  width: 1rem;
+  height: 1rem;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+.subscribe.is-done .subscribe-icon { display: none; }
 
 .subscribe-input {
   border: 0;
