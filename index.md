@@ -4,6 +4,8 @@ title: Home
 description: "Jack Skidmore thinks about how people coordinate to accomplish goals."
 ---
 
+# Welcome
+
 **Start here:**
 - [Who are the Gatekeepers?](essays/gatekeepers/)
 - [Oscillation](/essays/oscillation/)
