@@ -5,8 +5,10 @@ description: "Jack Skidmore thinks about how people coordinate to accomplish goa
 ---
 
 # Welcome
+If you sign up for emails you'll get 4-8 updates per year.
 
-**Start here:**
+If you just want to explore, I recommend you **start here:**
+
 - [Who are the Gatekeepers?](essays/gatekeepers/)
 - [Oscillation](/essays/oscillation/)
 - [Who is the Greatest?](/prayers/who-is-the-greatest/)
