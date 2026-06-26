@@ -151,7 +151,7 @@ body {
   background: transparent;
   outline: none;
   font: inherit;
-  font-size: 0.875rem;
+  font-size: 1rem;           /* 16px — below 16px iOS Safari zooms on focus */
   color: var(--text);
   padding: 0.25rem 0;
   width: 8.5rem;
@@ -187,7 +187,7 @@ body {
 
 /* confirmation state */
 .subscribe-done {
-  font-size: 0.875rem;       /* match the input so the row height is identical */
+  font-size: 1rem;           /* match the input so the row height is identical */
   color: var(--text-secondary);
   padding: 0.25rem 0;
   line-height: 1.5;
