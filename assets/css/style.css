@@ -380,12 +380,16 @@ body {
 @media (max-width: 600px) {
   .site-header {
     padding: 1rem 1rem 0.75rem;
+    flex-wrap: wrap;
+  }
+  /* Give the subscribe box + toggle their own row below the nav so typing
+     (which reveals the send arrow) never reflows the nav pills. */
+  .header-actions {
+    width: 100%;
+    justify-content: flex-end;
   }
   .content {
     padding: 1rem 1rem 3rem;
-  }
-  .subscribe-input {
-    width: 6.5rem;
   }
 }
 
