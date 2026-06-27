@@ -8,7 +8,7 @@ description: "Jack Skidmore thinks about how people coordinate to accomplish goa
 
 If you sign up for emails you'll get 4-8 updates per year.
 
-If you just want to explore, I recommend you **start here:**
+If you just want to explore, I recommend you start here:
 
 - [Who are the Gatekeepers?](essays/gatekeepers/)
 - [Oscillation](/essays/oscillation/)
