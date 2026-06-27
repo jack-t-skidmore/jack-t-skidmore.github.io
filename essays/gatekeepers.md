@@ -88,7 +88,7 @@ And progress becomes an existential necessity because it yields an advantage ove
 
 The observation buckles when we examine political progress. The Enlightenment establishes a promising trajectory: property rights are established, separation of powers is instituted, and subjects become citizens. But political progress lapses in ways technological progress does not.
 
-Again, the contrast is striking and poses a puzzle. If political and technological progress are both beneficial to the state, they should have grown together. Does this mean political progress is actually bad for the state? Does distributed power create an ineffective and slow bureaucracy? Does democracy plant the seed of its own destruction?
+The contrast is striking and poses a puzzle. If political and technological progress are both beneficial to the state, they should have grown together. Does this mean political progress is actually bad for the state? Does distributed power create an ineffective and slow bureaucracy? Does democracy plant the seed of its own destruction?
 
 These are the wrong questions to ask. This is clear when you compare democracies and dictatorships. Democracies are more economically successful and enjoy a significantly higher standard of living[^6]. Political progress cannot be a state-level disadvantage. Instead, this helps us see that political progress is victim to something its brother is immune to. We look forward on technological development, fully expecting tomorrow's computers and cars to be better than today's. But we look backward on politics, often believing yesterday was better than today, and tomorrow will be even worse[^7]. Only, instead of Aristotle, we look back on Madison.
 
