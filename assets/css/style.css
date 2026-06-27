@@ -138,6 +138,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  min-width: 11rem;          /* default pill size; holds until typed text outgrows it */
   background: var(--pill-bg);
   border: 1px solid var(--border);
   border-radius: 9999px;
@@ -170,7 +171,8 @@ body {
   font-size: 1rem;           /* 16px — below 16px iOS Safari zooms on focus */
   color: var(--text);
   padding: 0.25rem 0;
-  width: 8.5rem;
+  flex: 1 1 auto;            /* fills the pill; gives up room for the arrow without jumping */
+  min-width: 0;
 }
 
 .subscribe-input::placeholder {

@@ -108,11 +108,11 @@
       const cs = getComputedStyle(input);
       ['fontFamily', 'fontSize', 'fontWeight', 'fontStyle', 'letterSpacing'].forEach(function (p) { sizer.style[p] = cs[p]; });
       document.body.appendChild(sizer);
-      // hold the default 8.5rem width; only grow once the text exceeds it, never shrink below
-      const minWidth = 8.5 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+      // size the input to its content; the pill's min-width holds the default and the
+      // flex input gives up space for the arrow, so the pill only grows once text outgrows it
       function autosize() {
         sizer.textContent = input.value || input.placeholder || '';
-        input.style.width = Math.max(minWidth, sizer.offsetWidth + 2) + 'px';
+        input.style.width = (sizer.offsetWidth + 2) + 'px';
       }
 
       // show the arrow only when there's something to send; grow the pill as you type
