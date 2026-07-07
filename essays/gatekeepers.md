@@ -5,7 +5,7 @@ date: 2026-06-25
 description: "How power shapes technological and political progress."
 ---
 
-Progress is the result of humanity finally embracing the right ideas about the world. Or so the common story goes. What if progress is actually something we are subject to, rather than something we control? And if this is true, is it possible for us to take the wheel?
+Progress is humanity's triumph over the nature. Or so the story goes. What if progress is actually something we are subject to, rather than something we control? And if this is true, how do we direct progress where we need it most?
 
 Let's begin with Mokyr's *A Culture of Growth*. He tells a compelling story explaining the unique cultural conditions that produced the Industrial Revolution in Europe. First, I will refactor his story into heroes and villains and use that lens to examine what causes progress. Then we will see if the exception proves the rule: why does political progress stagnate as technological progress compounds?
 
