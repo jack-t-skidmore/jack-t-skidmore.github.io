@@ -14,7 +14,7 @@ We confess that we are like Israel in the desert
 
 But hear the good news! Where we failed in the desert, Jesus did not:
 - When hungry, Jesus persevered in faith
-- When you seemed far away, Jesus endured and did not put you to the test
+- When you seemed far away, Jesus endured, trusting your plan for redemption
 - When offered worldly power, Jesus trusted the wisdom of the Father, even when it looked like foolishness and lead him to die on a cross
 
 Thank you for your foolish love for us. Thank you that you went through death; and rose again to true life; and that you generously offer us your life—life to the full!
