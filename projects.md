@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-permalink: /Projects/
+permalink: /projects/
 description: "Jack's various projects he's working on."
 ---
 

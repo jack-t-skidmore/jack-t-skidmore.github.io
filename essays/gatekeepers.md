@@ -149,6 +149,6 @@ This takes us back to the Hebrew Bible’s claim that all people are made in the
 
 [^12]: We actually have a natural experiment where [Nebraska](https://nebraskalegislature.gov/about/history_unicameral.php#:~:text=In%20a%20one%2Dhouse%20legislature,both%20houses%20vary%20in%20content.) has a unicameral and nonpartisan legislature. But their description of this natural experiment betrays the lack of attention. The results section explains that it cut government costs, reduced the number of committees, and increased the number of bills when it was first established. No cross state comparison, nothing.
 
-[^13]: To be fair this is a difficult problem. Political experiments have longer feedback loops and messier data. But it is not an impossible problem. Downward experiments suffer from the same limitations, but they are still more widely adopted. I am building this capability with [Eudo](https://jackskidmore.com/about/eudo/), and would love to one day apply it to upward experiments.
+[^13]: To be fair this is a difficult problem. Political experiments have longer feedback loops and messier data. But it is not an impossible problem. Downward experiments suffer from the same limitations, but they are still more widely adopted. I am building this capability with [Eudo](https://jackskidmore.com/projects/eudo/), and would love to one day apply it to upward experiments.
 
 [^14]: [Walter Wink](https://en.wikipedia.org/wiki/Walter_Wink) shaped my thinking here.

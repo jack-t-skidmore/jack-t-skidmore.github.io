@@ -16,7 +16,7 @@ There are a few other ways to [help](/help/).
 
 If you just want to explore, I recommend you start here:
 
-- [Eudo](/about/eudo/)
-- [Who are the Gatekeepers?](essays/gatekeepers/)
+- [Eudo](/projects/eudo/)
+- [Who are the Gatekeepers?](/essays/gatekeepers/)
 - [Oscillation](/essays/oscillation/)
 - [Who is the Greatest?](/prayers/who-is-the-greatest/)
