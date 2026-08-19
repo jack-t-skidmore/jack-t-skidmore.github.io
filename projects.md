@@ -4,11 +4,6 @@ title: Projects
 permalink: /projects/
 description: "Jack's various projects he's working on."
 ---
-
-# Projects {#projects}
-
-What I work on:
-
 {% assign projects = site.pages | where_exp: "p", "p.url contains '/projects/'" | where_exp: "p", "p.order" | sort: "order" %}
 <ul class="file-list">
 {% for p in projects %}
