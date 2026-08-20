@@ -21,5 +21,5 @@ If you want explore my writing, I recommend you start here:
 - [Oscillation](/essays/oscillation/)
 - [Who is the Greatest?](/prayers/who-is-the-greatest/)
 
-Best
+Best<br>
 Jack
