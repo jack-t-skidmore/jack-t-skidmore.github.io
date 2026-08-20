@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Crossroads Youth
-date: 2024-09-01
-order: 3
+date: 2024-09
+order: 2
 description: "The youth program at Crossroads Church in Lansing."
 ---
 
