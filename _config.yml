@@ -10,10 +10,10 @@ permalink: pretty
 exclude:
   - README.md
 
-# Highlight the Projects nav pill on project pages (and any page can override
+# Highlight the Updates nav pill on project pages (and any page can override
 # its active pill with `nav_active:` in front matter).
 defaults:
   - scope:
       path: "projects"
     values:
-      nav_active: /projects/
+      nav_active: /updates/
