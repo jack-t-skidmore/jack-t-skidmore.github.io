@@ -243,7 +243,7 @@ body {
    buffer so the gap is just the content padding, consistent across pages. */
 .markdown-body > h1:first-child,
 .markdown-body article > h1:first-child { margin-top: 0; }
-.markdown-body h2 { font-size: 1.5em; padding-bottom: 0.3em; border-bottom: 1px solid var(--border); }
+.markdown-body h2 { font-size: 1.5em; }
 .markdown-body h3 { font-size: 1.25em; }
 .markdown-body h4 { font-size: 1em; }
 .markdown-body h5 { font-size: 0.875em; }
