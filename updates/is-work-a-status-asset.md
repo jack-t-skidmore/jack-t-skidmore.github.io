@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Is work a status asset?
-date: 2026-10
+date: 2026-10-01
 description: "Jack thinks through work as a status asset and the effectiveness of cold outreach."
 ---
 
