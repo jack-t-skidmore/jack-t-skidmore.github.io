@@ -49,7 +49,7 @@ On our walk back, we *finally* noticed no one else was swimming… or even dress
 
 It was a wonderful experience in isolation, and it feels even better knowing I should have paid $10K for it!
 
-That's all for now — as always, I’d love to chat, so please reply to start a conversation, and **if this was forwarded to you** you can sign up for these ~quarterly updates by clicking the link below, or typing your email into the box on [jackskidmore.com](https://jackskidmore.com/). The next update will go out in Q1 2027!
+That's all for now — as always, I’d love to chat, so please reply to start a conversation, and **if this was forwarded to you** you can sign up for these ~quarterly updates by clicking the link below, or typing your email into the box on [jackskidmore.com](https://jackskidmore.com/). The next update will go out in Q1 2027!<br>
 
 Best <br>
 Jack
