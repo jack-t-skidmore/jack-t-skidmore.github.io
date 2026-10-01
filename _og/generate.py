@@ -1,9 +1,10 @@
 """Generate a link-preview (og:image) card for every Markdown page with a title.
 
 Each card has a small "Jack Skidmore" banner and the page title below it,
-wrapped and shrunk to fit. Output goes to assets/images/og/<slug>.png, where
-<slug> is the source path without ".md" and with "/" replaced by "-" — the
-same rule _layouts/default.html uses to find it.
+wrapped and shrunk to fit. An optional `og_title:` in front matter overrides
+the text on the card. Output goes to assets/images/og/<slug>.png, where <slug>
+is the source path without ".md" and with "/" replaced by "-" — the same rule
+_layouts/default.html uses to find it.
 
 Run from the repo root:  python _og/generate.py
 """
@@ -101,7 +102,7 @@ def main():
         if not fm.get("title"):
             continue
         slug = str(rel.with_suffix("")).replace("/", "-")
-        render(fm["title"], OUT / f"{slug}.png")
+        render(fm.get("og_title") or fm["title"], OUT / f"{slug}.png")
         print(f"{rel} -> assets/images/og/{slug}.png")
 
 

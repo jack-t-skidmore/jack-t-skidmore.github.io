@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+og_title: Welcome to my website
 description: "Jack Skidmore thinks about how people coordinate to accomplish goals."
 ---
 
