@@ -10,7 +10,7 @@ Hello!
 You are receiving this email because you subscribed to my Substack a long time ago. Thank you for your support, and sorry that I never sent anything.
 <br>
 <br>
-Going forward I'll post my thoughts on [jackskidmore.com](https://jackskidmore.com), paired with ~quarterly emails with links to [essays](https://jackskidmore.com/essays/), [prayers](https://jackskidmore.com/prayers/), and thoughts about [Eudo](https://jackskidmore.com/about/eudo/) or other [projects](https://jackskidmore.com/about/).
+Going forward I'll post my thoughts on [jackskidmore.com](https://jackskidmore.com), paired with ~quarterly emails with links to [essays](https://jackskidmore.com/essays/), [prayers](https://jackskidmore.com/prayers/), and thoughts about [Eudo](https://jackskidmore.com/projects/eudo/) or other [projects](https://jackskidmore.com/projects/).
 <br>
 <br>
 I recently posted an essay on why technological progress seems faster than political progress called '*Who are the gatekeepers?*' Here is an excerpt:
