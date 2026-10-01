@@ -4,3 +4,5 @@ _site/
 .jekyll-metadata
 .DS_Store
 .claude/
+assets/images/og/
+__pycache__/
