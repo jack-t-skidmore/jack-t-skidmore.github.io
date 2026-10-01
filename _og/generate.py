@@ -1,4 +1,4 @@
-"""Generate a link-preview (og:image) card for every `layout: page` page.
+"""Generate a link-preview (og:image) card for every Markdown page with a title.
 
 Each card has a small "Jack Skidmore" banner and the page title below it,
 wrapped and shrunk to fit. Output goes to assets/images/og/<slug>.png, where
@@ -98,7 +98,7 @@ def main():
         if any(part.startswith((".", "_")) for part in rel.parts):
             continue
         fm = front_matter(path)
-        if fm.get("layout") != "page" or not fm.get("title"):
+        if not fm.get("title"):
             continue
         slug = str(rel.with_suffix("")).replace("/", "-")
         render(fm["title"], OUT / f"{slug}.png")
