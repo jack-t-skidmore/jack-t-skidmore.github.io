@@ -100,7 +100,8 @@
         const send  = form.querySelector('.subscribe-send');
         const done  = form.querySelector('.subscribe-done');
 
-        // size the input to its content, but never narrower than the placeholder (less the
+        // size the input to its content, but never narrower than the placeholder plus enough
+        // room that the gap after the text matches the gap before the mail icon (less the
         // arrow's room once it shows), so the pill holds its size while you type and only
         // grows once the text outgrows it
         function measure(text) {
@@ -110,8 +111,10 @@
         function autosize() {
           const cs = getComputedStyle(input);
           ['fontFamily', 'fontSize', 'fontWeight', 'fontStyle', 'letterSpacing'].forEach(function (p) { sizer.style[p] = cs[p]; });
-          const arrow = send.hidden ? 0 : send.offsetWidth + parseFloat(getComputedStyle(form).columnGap || 0);
-          input.style.width = (Math.max(measure(input.value), measure(input.placeholder || '') - arrow) + 2) + 'px';
+          const fs = getComputedStyle(form);
+          const even  = parseFloat(fs.paddingLeft) - parseFloat(fs.paddingRight);
+          const arrow = send.hidden ? 0 : send.offsetWidth + parseFloat(fs.columnGap || 0);
+          input.style.width = Math.max(measure(input.value) + 2, measure(input.placeholder || '') + even - arrow) + 'px';
         }
 
         // show the arrow only when there's something to send; grow the pill as you type

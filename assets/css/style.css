@@ -377,6 +377,13 @@ body {
 }
 .markdown-body a.reversefootnote:hover::after { color: var(--link-hover); }
 
+/* thin rule between the end of the piece (and its signup pill) and the footnotes */
+.markdown-body .footnotes {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
 .markdown-body strong {
   font-weight: 600;
 }
