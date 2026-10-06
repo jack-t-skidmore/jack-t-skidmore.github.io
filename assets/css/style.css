@@ -224,59 +224,97 @@ body {
   margin: 3rem 0 2rem;
 }
 
-/* frosted pill that floats at the bottom, like Safari's iPhone address bar */
-.float-subscribe {
+/* bottom-right + button that opens into the email pill and theme toggle */
+.fab {
+  --fab-size: 2.5rem;
   position: fixed;
-  left: 50%;
-  bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
+  right: 1rem;
+  bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
   z-index: 10;
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  transform: translate(-50%, calc(100% + 2rem));
+  transform: translateY(calc(100% + 1.5rem));
   opacity: 0;
-  pointer-events: none;
+  pointer-events: none;      /* the closed tray's empty space mustn't block the page */
   transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.25s ease;
 }
 
-.float-subscribe.is-visible {
-  transform: translate(-50%, 0);
+.fab.is-visible {
+  transform: translateY(0);
   opacity: 1;
-  pointer-events: auto;
 }
 
-.float-subscribe .subscribe,
-.float-subscribe-close {
+.fab.is-visible .fab-button { pointer-events: auto; }
+
+/* frosted glass, like Safari's iPhone address bar */
+.fab-button,
+.fab .subscribe,
+.fab .theme-toggle {
   background: color-mix(in srgb, var(--pill-bg) 72%, transparent);
   -webkit-backdrop-filter: blur(18px) saturate(180%);
   backdrop-filter: blur(18px) saturate(180%);
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-.float-subscribe .subscribe {
-  padding: 0.3rem 0.4rem 0.3rem 0.9rem;
-}
-
-.float-subscribe-close {
+.fab-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.1rem;
-  height: 2.1rem;
+  width: var(--fab-size);
+  height: var(--fab-size);
   flex-shrink: 0;
   border: 1px solid var(--border);
   border-radius: 9999px;
-  color: var(--text-secondary);
+  color: var(--text);
   cursor: pointer;
+  transition: border-color 0.15s ease;
 }
 
-.float-subscribe-close:hover {
-  color: var(--text);
-  border-color: var(--text-secondary);
+.fab-button:hover { border-color: var(--text-secondary); }
+
+/* the + turns into an × when open */
+.fab-button svg { transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.fab.is-open .fab-button svg { transform: rotate(45deg); }
+
+/* bubbles slide out to the left of the button */
+.fab-tray {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.fab-tray > * {
+  opacity: 0;
+  transform: translateX(1.5rem) scale(0.9);
+  pointer-events: none;
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.2s ease;
+}
+
+.fab.is-open .fab-tray > * {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+/* the toggle sits next to the button, so it comes out first */
+.fab.is-open .fab-tray > :first-child:not(:last-child) { transition-delay: 0.05s; }
+
+.fab .subscribe {
+  height: var(--fab-size);
+  padding: 0 0.4rem 0 0.9rem;
+  max-width: calc(100vw - 2rem - 2 * var(--fab-size) - 0.8rem);
+}
+
+.fab .theme-toggle {
+  width: var(--fab-size);
+  height: var(--fab-size);
+  justify-content: center;
+  padding: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .float-subscribe { transition: opacity 0.2s ease; }
+  .fab, .fab-tray > *, .fab-button svg { transition: opacity 0.2s ease; }
 }
 
 /* ===== Content ===== */

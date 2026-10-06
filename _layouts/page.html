@@ -22,11 +22,14 @@ layout: default
   {% endif %}
 </article>
 {% if end_signup %}
-  {% comment %}Floats at the bottom once the header pill scrolls away; hides again at the end-of-page pill.{% endcomment %}
-  <div class="float-subscribe" inert>
-    {% include subscribe.html placeholder="Get ~quarterly emails" %}
-    <button type="button" class="float-subscribe-close" aria-label="Dismiss">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+  {% comment %}Bottom-right + button; opens into the email pill and theme toggle.{% endcomment %}
+  <div class="fab" inert>
+    <div class="fab-tray">
+      {% include subscribe.html placeholder="Get ~quarterly emails" %}
+      {% include theme-toggle.html %}
+    </div>
+    <button type="button" class="fab-button" aria-expanded="false" aria-label="Get emails and settings">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
     </button>
   </div>
 {% endif %}

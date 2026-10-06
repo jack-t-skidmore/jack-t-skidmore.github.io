@@ -64,10 +64,7 @@
     </nav>
     <div class="header-actions">
       {% include subscribe.html placeholder="Get emails" %}
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
+      {% include theme-toggle.html %}
     </div>
   </header>
 
@@ -77,14 +74,15 @@
 
   <script>
     (function() {
-      const toggle = document.getElementById('theme-toggle');
       const html = document.documentElement;
       // Initial theme is set by the inline script in <head> (before paint).
-      toggle.addEventListener('click', function() {
-        const current = html.getAttribute('data-theme');
-        const next = current === 'dark' ? 'light' : 'dark';
-        html.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
+      document.querySelectorAll('.theme-toggle').forEach(function (toggle) {
+        toggle.addEventListener('click', function() {
+          const current = html.getAttribute('data-theme');
+          const next = current === 'dark' ? 'light' : 'dark';
+          html.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+        });
       });
     })();
   </script>
@@ -102,13 +100,18 @@
         const send  = form.querySelector('.subscribe-send');
         const done  = form.querySelector('.subscribe-done');
 
-        // size the input to its content; the pill's min-width holds the default and the
-        // flex input gives up space for the arrow, so the pill only grows once text outgrows it
+        // size the input to its content, but never narrower than the placeholder (less the
+        // arrow's room once it shows), so the pill holds its size while you type and only
+        // grows once the text outgrows it
+        function measure(text) {
+          sizer.textContent = text;
+          return sizer.offsetWidth;
+        }
         function autosize() {
           const cs = getComputedStyle(input);
           ['fontFamily', 'fontSize', 'fontWeight', 'fontStyle', 'letterSpacing'].forEach(function (p) { sizer.style[p] = cs[p]; });
-          sizer.textContent = input.value || input.placeholder || '';
-          input.style.width = (sizer.offsetWidth + 2) + 'px';
+          const arrow = send.hidden ? 0 : send.offsetWidth + parseFloat(getComputedStyle(form).columnGap || 0);
+          input.style.width = (Math.max(measure(input.value), measure(input.placeholder || '') - arrow) + 2) + 'px';
         }
 
         // show the arrow only when there's something to send; grow the pill as you type
@@ -143,40 +146,54 @@
   </script>
 
   <script>
-    // floating pill: shows once the header scrolls away, hides at the end-of-page pill
+    // bottom-right + button: shows once the header scrolls away, opens into the
+    // email pill and theme toggle, and hides at the end-of-page pill when closed
     (function () {
-      const bar = document.querySelector('.float-subscribe');
-      if (!bar || !('IntersectionObserver' in window)) return;
+      const fab = document.querySelector('.fab');
+      if (!fab || !('IntersectionObserver' in window)) return;
       const header = document.querySelector('.site-header');
-      const end = document.querySelector('.end-subscribe');
-      let headerVisible = true, endVisible = false, dismissed = false;
-      try {
-        dismissed = localStorage.getItem('subscribed') === '1' ||
-                    sessionStorage.getItem('float-subscribe-dismissed') === '1';
-      } catch (e) {}
+      const end    = document.querySelector('.end-subscribe');
+      const button = fab.querySelector('.fab-button');
+      const tray   = fab.querySelector('.fab-tray');
+      const form   = tray.querySelector('form.subscribe');
+      let headerVisible = true, endVisible = false;
 
-      function update() {
-        // stay put while someone is typing in it, even if the end pill scrolls in
-        const show = !dismissed && (bar.contains(document.activeElement) || (!headerVisible && !endVisible));
-        bar.classList.toggle('is-visible', show);
-        bar.inert = !show;
+      try { if (localStorage.getItem('subscribed') === '1') form.remove(); } catch (e) {}
+
+      function setOpen(open) {
+        fab.classList.toggle('is-open', open);
+        button.setAttribute('aria-expanded', open ? 'true' : 'false');
+        button.setAttribute('aria-label', open ? 'Close' : 'Get emails and settings');
+        tray.inert = !open;
       }
+      function update() {
+        const open = fab.classList.contains('is-open');
+        const show = open || (!headerVisible && !endVisible);
+        if (headerVisible && open) setOpen(false);   // back at the top: fold away
+        fab.classList.toggle('is-visible', show && !headerVisible);
+        fab.inert = headerVisible || !show;
+      }
+
+      button.addEventListener('click', function () { setOpen(!fab.classList.contains('is-open')); update(); });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && fab.classList.contains('is-open')) { setOpen(false); button.focus(); update(); }
+      });
+      document.addEventListener('click', function (e) {
+        if (fab.classList.contains('is-open') && !fab.contains(e.target)) { setOpen(false); update(); }
+      });
 
       new IntersectionObserver(function (e) { headerVisible = e[0].isIntersecting; update(); }).observe(header);
       if (end) new IntersectionObserver(function (e) { endVisible = e[0].isIntersecting; update(); }).observe(end);
-      bar.addEventListener('focusout', function () { setTimeout(update, 0); });
 
-      bar.querySelector('.float-subscribe-close').addEventListener('click', function () {
-        dismissed = true;
-        try { sessionStorage.setItem('float-subscribe-dismissed', '1'); } catch (e) {}
-        update();
-      });
-
-      // once they're subscribed anywhere, get out of the way (after showing "Thank you" here)
+      // subscribed from the tray: show "Thank you", then fold up and drop the form
       document.addEventListener('subscribed', function (e) {
-        const here = bar.contains(e.detail.form);
-        setTimeout(function () { dismissed = true; if (bar.contains(document.activeElement)) document.activeElement.blur(); update(); }, here ? 1800 : 0);
+        if (!form.isConnected) return;
+        const here = form === e.detail.form;
+        setTimeout(function () { setOpen(false); update(); }, here ? 1800 : 0);
+        setTimeout(function () { form.remove(); }, here ? 2200 : 0);
       });
+      setOpen(false);
+      update();
     })();
   </script>
 
