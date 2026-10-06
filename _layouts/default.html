@@ -15,7 +15,7 @@
     })();
   </script>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
   <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   {% assign description = page.description | default: site.description %}
@@ -162,6 +162,31 @@
       let headerVisible = true, endVisible = false;
 
       try { if (localStorage.getItem('subscribed') === '1') form.remove(); } catch (e) {}
+
+      // ride on top of the on-screen keyboard instead of hiding behind it (iOS keeps
+      // fixed elements at the bottom of the page, under the keyboard)
+      const vv = window.visualViewport;
+      function liftAboveKeyboard() {
+        const kb = Math.max(0, window.innerHeight - vv.height - vv.offsetTop);
+        fab.style.setProperty('--kb', kb + 'px');
+      }
+      if (vv) {
+        vv.addEventListener('resize', liftAboveKeyboard);
+        vv.addEventListener('scroll', liftAboveKeyboard);
+      }
+
+      // focus the field without the browser scrolling the page to it, and undo any
+      // nudge iOS makes while the keyboard slides in
+      const input = form.querySelector('.subscribe-input');
+      input.addEventListener('touchend', function (e) {
+        if (document.activeElement === input) return;
+        e.preventDefault();
+        const y = window.scrollY;
+        input.focus({ preventScroll: true });
+        function hold() { if (window.scrollY !== y) window.scrollTo(0, y); }
+        window.addEventListener('scroll', hold);
+        setTimeout(function () { window.removeEventListener('scroll', hold); }, 800);
+      });
 
       function setOpen(open) {
         fab.classList.toggle('is-open', open);
