@@ -1,8 +1,32 @@
 ---
 layout: default
 ---
+{% comment %}Essays, prayers and updates end with a signup pill, placed above any footnotes so it sits where the reading ends.{% endcomment %}
+{% assign section = page.path | split: '/' | first %}
+{% if section == 'essays' or section == 'prayers' or section == 'updates' %}
+  {% assign end_signup = true %}
+{% endif %}
 <article>
   <h1>{{ page.title }}</h1>
   {% if page.date %}<p class="page-date">{{ page.date | date: "%B, %Y" }}</p>{% endif %}
-  {{ content }}
+  {% if end_signup %}
+    {% assign footnotes_tag = '<div class="footnotes"' %}
+    {% assign parts = content | split: footnotes_tag %}
+    {{ parts[0] }}
+    <div class="end-subscribe">
+      {% include subscribe.html placeholder="Get ~quarterly emails" %}
+    </div>
+    {% if parts.size > 1 %}{{ footnotes_tag }}{{ parts[1] }}{% endif %}
+  {% else %}
+    {{ content }}
+  {% endif %}
 </article>
+{% if end_signup %}
+  {% comment %}Floats at the bottom once the header pill scrolls away; hides again at the end-of-page pill.{% endcomment %}
+  <div class="float-subscribe" inert>
+    {% include subscribe.html placeholder="Get ~quarterly emails" %}
+    <button type="button" class="float-subscribe-close" aria-label="Dismiss">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+    </button>
+  </div>
+{% endif %}

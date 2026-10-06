@@ -1,0 +1,14 @@
+<form class="subscribe{% if include.class %} {{ include.class }}{% endif %}" autocomplete="on"
+      action="https://buttondown.com/api/emails/embed-subscribe/skidmore"
+      method="post">
+  <svg class="subscribe-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+  <input type="email" name="email" class="subscribe-input"
+         placeholder="{{ include.placeholder | default: 'Get emails' }}" aria-label="Subscribe with your email" required>
+  <input type="hidden" name="embed" value="1">
+  <button type="submit" class="subscribe-send" aria-label="Subscribe" hidden>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+         stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+  </button>
+  <span class="subscribe-done" hidden></span>
+</form>
