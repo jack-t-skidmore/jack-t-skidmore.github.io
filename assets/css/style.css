@@ -266,6 +266,9 @@ body {
   flex-shrink: 0;
   border: 1px solid var(--border);
   border-radius: 9999px;
+  box-shadow: none;          /* flat, so no shadow line under the + / × */
+  -webkit-appearance: none;
+  appearance: none;
   color: var(--text);
   cursor: pointer;
   transition: border-color 0.15s ease;
