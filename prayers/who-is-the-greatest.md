@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Who is the Greatest?
+title: Who is the greatest?
 date: 2025-11-23
 description: "Matthew 17–20 on who is great in the Kingdom of God."
 ---

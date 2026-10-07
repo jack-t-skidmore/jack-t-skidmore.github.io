@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Israel in the Desert
+title: Israel in the desert
 date: 2025-04-12
 description: "Israel's failure and Jesus' faithfulness in the desert."
 ---

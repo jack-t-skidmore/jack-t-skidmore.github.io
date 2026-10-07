@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jesus Prayer Call and Response
+title: Jesus prayer call and response
 date: 2024-06-10
 description: "A call-and-response framing of the Jesus Prayer for confession, assurance, and thanksgiving."
 ---
