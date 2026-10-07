@@ -18,9 +18,9 @@ This website is where I think out loud about whatever interests me. Having a pla
 
 If you want to explore my writing, I recommend you start here:
 
-- [Who are the Gatekeepers?](/essays/gatekeepers/)
+- [Who are the gatekeepers?](/essays/gatekeepers/)
 - [Oscillation](/essays/oscillation/)
-- [Who is the Greatest?](/prayers/who-is-the-greatest/)
+- [Who is the greatest?](/prayers/who-is-the-greatest/)
 
 Best<br>
 Jack
