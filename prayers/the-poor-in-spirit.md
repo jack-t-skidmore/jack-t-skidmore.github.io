@@ -5,7 +5,6 @@ date: 2026-10-07
 description: "The compelling stories that sully what God calls good."
 ---
 
-# The poor in spirit
 Our Father in heaven
 
 We confess that even as we try to follow you, we are worn down by compelling stories that go against your way. We try to reconcile your wisdom to the wisdom of the world — and in doing so, sully what you call good.
