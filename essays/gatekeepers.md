@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Who are the Gatekeepers?
+title: Who are the gatekeepers?
 date: 2026-06-25
 description: "How power shapes technological and political progress."
 ---
