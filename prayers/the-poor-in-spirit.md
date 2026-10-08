@@ -8,7 +8,7 @@ description: "The compelling stories that sully what God calls good."
 Our Father in heaven
 
 We confess that even as we try to follow you, we are worn down by compelling stories that go against your way. We try to reconcile your wisdom to the wisdom of the world, and in doing so, sully what you call good.
-- We try to love and serve the poor, but find ourselves satisfied that we serve *them*, failing to see we are all subject to necessity — we are each pulled to our own sin in the same way.
+- We try to love and serve the poor, but find ourselves satisfied that we serve *them*, failing to see we are all subject to necessity — we are all pulled to our own sin, and we all contribute to the body as You cause us to.
 - We try to share the story of Jesus’ life, death, and resurrection, but do so at the expense of the patience, kindness, gentleness, and self-control that love requires of us.
 - We try to channel our ambition toward work that serves other people, but it collapses into self-serving vanity.
 
