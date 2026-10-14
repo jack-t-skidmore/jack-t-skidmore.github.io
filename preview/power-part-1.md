@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Power part 1 — Why does power accumulate and corrupt?
-date: 2026-06-25
+title: Why does power accumulate and corrupt? (Power pt. 1) 
+date: 2026-10-14
 description: "The difference between absolute and relative power."
 ---
 
