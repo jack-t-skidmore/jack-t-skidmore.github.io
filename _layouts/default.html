@@ -32,6 +32,7 @@
 
   <meta name="description" content="{{ description }}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {% if page.noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
 
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:description" content="{{ description }}">

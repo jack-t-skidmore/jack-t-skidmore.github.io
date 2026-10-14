@@ -17,3 +17,10 @@ defaults:
       path: "projects"
     values:
       nav_active: /updates/
+  # Unlisted share-by-link files: kept out of listings, sitemaps, and search.
+  - scope:
+      path: "preview"
+    values:
+      exclude: true
+      sitemap: false
+      noindex: true
