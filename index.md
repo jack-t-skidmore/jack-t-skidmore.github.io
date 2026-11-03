@@ -18,8 +18,8 @@ This website is where I think out loud about whatever interests me. Having a pla
 
 If you're new and want to explore, here are a few places to start:
 
+- [Why does power accumulate and corrupt? (Power pt. 1)](/essays/power-part-1/)
 - [Who are the gatekeepers?](/essays/gatekeepers/)
-- [Oscillation](/essays/oscillation/)
 - [Who is the greatest?](/prayers/who-is-the-greatest/)
 
 Best<br>
