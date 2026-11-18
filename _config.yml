@@ -9,14 +9,28 @@ kramdown:
 permalink: pretty
 exclude:
   - README.md
+  - AGENTS.md
+  - CLAUDE.md
 
-# Highlight the Updates nav pill on project pages (and any page can override
+# Highlight the Writing nav pill on project pages (and any page can override
 # its active pill with `nav_active:` in front matter).
 defaults:
   - scope:
       path: "projects"
     values:
-      nav_active: /updates/
+      nav_active: /writing/
+  - scope:
+      path: "essays"
+    values:
+      nav_active: /writing/
+  - scope:
+      path: "prayers"
+    values:
+      nav_active: /writing/
+  - scope:
+      path: "updates"
+    values:
+      nav_active: /
   # Unlisted share-by-link files: kept out of listings, sitemaps, and search.
   - scope:
       path: "preview"

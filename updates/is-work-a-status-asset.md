@@ -7,7 +7,7 @@ description: "Jack thinks through work as a status asset and the effectiveness o
 
 Hello!
 
-A few updates / thoughts I’ve been chewing on: what makes a good status asset, my experience with cold outreach vs introductions, emailing John List and the conversations with the folks he connected me to, and how I accidentally got a $10K experience for free. 
+A few updates / thoughts I’ve been chewing on: what makes a good [status asset](#is-work-a-status-asset), my experience with [cold outreach](#cold-outreach-works-better-than-i-expected) vs introductions, emailing [John List](#speaking-of-cold-outreach-john-list-replied-to-my-email) and the conversations with the folks he connected me to, and how I accidentally got a [$10K experience](#story-time) for free. 
 
 Read whatever sounds interesting!
 ## Is work a status asset?

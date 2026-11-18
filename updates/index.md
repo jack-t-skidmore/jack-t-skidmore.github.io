@@ -1,29 +1,19 @@
 ---
-layout: page
+layout: none
 title: Updates
 permalink: /updates/
-description: "Jack's projects, and the email updates he sends out."
+sitemap: false
 ---
-
-## Projects
-
-{% assign projects = site.pages | where_exp: "p", "p.url contains '/projects/'" | where_exp: "p", "p.order" | where_exp: "p", "p.exclude != true" | sort: "order" %}
-<ul class="file-list">
-{% for p in projects %}
-  <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a>: {{ p.description | slice: 0 | upcase }}{{ p.description | slice: 1, 500 }}</li>
-{% endfor %}
-</ul>
-
-## Updates
-
-{% assign this_url = page.url %}
-{% assign updates = site.pages | where_exp: "p", "p.url contains '/updates/'" | where_exp: "p", "p.url != this_url" | where_exp: "p", "p.exclude != true" | sort: "date" | reverse %}
-{% if updates.size > 0 %}
-<ul class="file-list">
-{% for p in updates %}
-  <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% if p.date %} <span class="file-date">({{ p.date | date: "%B, %Y" }})</span>{% endif %}</li>
-{% endfor %}
-</ul>
-{% else %}
-<p>Coming soon.</p>
-{% endif %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url={{ '/writing/#updates' | relative_url }}">
+  <link rel="canonical" href="{{ '/writing/#updates' | absolute_url }}">
+  <meta name="robots" content="noindex">
+  <title>Redirecting…</title>
+</head>
+<body>
+  <p>This page moved to <a href="{{ '/writing/#updates' | relative_url }}">Writing</a>.</p>
+</body>
+</html>

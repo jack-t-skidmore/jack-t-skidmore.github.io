@@ -1,8 +1,7 @@
 - name: Home
   url: /
-- name: Essays
-  url: /essays/
-- name: Prayers
-  url: /prayers/
-- name: Updates
-  url: /updates/
+- name: Writing
+  url: /writing/
+- name: Welcome
+  url: /welcome/
+  caption: "^ new here?"

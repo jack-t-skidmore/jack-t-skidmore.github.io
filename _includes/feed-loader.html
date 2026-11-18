@@ -1,0 +1,72 @@
+<script>
+  // Home feed: the first few updates are in the page; the rest are fetched from their own
+  // pages as the reader nears the bottom, a batch at a time.
+  (function () {
+    var more = document.querySelector('.feed-more');
+    if (!more || !window.fetch || !('IntersectionObserver' in window)) return;
+    var feed = document.querySelector('.feed');
+    var per = parseInt(feed.getAttribute('data-per'), 10) || 5;
+    var urls = JSON.parse(more.getAttribute('data-urls'));
+    var divider = document.getElementById('feed-divider');
+    var fallback = more.innerHTML;
+    var busy = false;
+    more.innerHTML = '<span class="feed-loading">Loading…</span>';
+
+    function entryFrom(html, url) {
+      var art = new DOMParser().parseFromString(html, 'text/html').querySelector('main article');
+      if (!art) return null;
+      art.querySelectorAll('.end-subscribe').forEach(function (e) { e.remove(); });
+      var title = art.querySelector('h1');
+      var section = document.createElement('section');
+      section.className = 'feed-entry';
+      var h1 = document.createElement('h1');
+      var a = document.createElement('a');
+      a.href = url;
+      a.textContent = title ? title.textContent : '';
+      h1.appendChild(a);
+      if (title) title.remove();
+      // same id prefixing as the server-built entries in index.md, so section links
+      // inside this update can't jump into a different update
+      var slug = url.split('/').filter(Boolean).pop();
+      section.setAttribute('data-slug', slug);
+      section.id = slug;
+      art.querySelectorAll('[id]').forEach(function (el) { el.id = slug + '--' + el.id; });
+      art.querySelectorAll('a[href^="#"]').forEach(function (a) {
+        a.setAttribute('href', '#' + slug + '--' + a.getAttribute('href').slice(1));
+      });
+      section.appendChild(h1);
+      while (art.firstChild) section.appendChild(art.firstChild);
+      return section;
+    }
+
+    function loadNext() {
+      if (busy || !urls.length) return;
+      busy = true;
+      more.classList.add('is-loading');
+      var batch = urls.splice(0, per);
+      Promise.all(batch.map(function (url) {
+        return fetch(url).then(function (r) { if (!r.ok) throw r; return r.text(); })
+                         .then(function (html) { return entryFrom(html, url); });
+      })).then(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry) return;
+          var d = divider.content.firstElementChild.cloneNode(true);
+          feed.appendChild(d);
+          d.querySelectorAll('form.subscribe').forEach(function (f) { if (window.initSubscribe) window.initSubscribe(f); });
+          feed.appendChild(entry);
+        });
+        busy = false;
+        more.classList.remove('is-loading');
+        if (!urls.length) { io.disconnect(); more.remove(); }
+      }).catch(function () {
+        io.disconnect();
+        more.classList.remove('is-loading');
+        more.innerHTML = fallback;
+      });
+    }
+
+    // start fetching a little before the reader actually hits the bottom
+    var io = new IntersectionObserver(function (e) { if (e[0].isIntersecting) loadNext(); }, { rootMargin: '600px 0px' });
+    io.observe(more);
+  })();
+</script>
